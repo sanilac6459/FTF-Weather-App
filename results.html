@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FTF Weather App</title>
+    <!-- bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="static/css/style.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"
+  </head>
+  
+  <body>
+		<!-- 	results page	 -->
+    <h1>Weather Results:</h1>
+    <h3>The coordinates of {{city}} are {{lat}}, {{lon}}</h3>
+      
+    <h4>Here is the weather for {{city}}:</h4>
+    <div class = "container">
+      <h4>Current Weather:</h4>
+      <p>Temp: {{temp_current}}°F</p>
+      <p>Feels Like: {{feel_temp_current}}°F</p>
+      <p>Humidity: {{humidity_current}}%</p>
+      <p>Condition: {{condition_current}}</p>
+      <p>Min Temp: {{min_current}}°F</p>
+      <p>Max Temp: {{max_current}}°F</p>
+      <br>
+  
+    
+      <h4>Weather in One Day:</h4>
+      <p>Temp: {{temp_next_day}}°F</p>
+      <p>Feels Like: {{feel_temp_next_day}}°F</p>
+      <p>Humidity: {{humidity_next_day}}%</p>
+      <p>Condition: {{condition_next_day}}</p>
+      <p>Min Temp: {{min_next_day}}°F</p>
+      <p>Max Temp: {{max_next_day}}°F</p>
+      <br>
+  
+      <h4>Weather in Two Days:</h4>
+      <p>Temp: {{temp_two_days}}°F</p>
+      <p>Feels Like: {{feel_temp_two_days}}°F</p>
+      <p>Humidity: {{humidity_two_days}}%</p>
+      <p>Condition: {{condition_two_days}}</p>
+      <p>Min Temp: {{min_two_day}}°F</p>
+      <p>Max Temp: {{max_two_day}}°F</p>
+      <br>
+  
+      <h4>Weather in Three Days:</h4>
+      <p>Temp: {{temp_three_days}}°F</p>
+      <p>Feels Like: {{feel_temp_three_days}}°F</p>
+      <p>Humidity: {{humidity_three_days}}%</p>
+      <p>Condition: {{condition_three_days}}</p>
+      <p>Min Temp: {{min_three_day}}°F</p>
+      <p>Max Temp: {{max_three_day}}°F</p>
+       <br>
+  
+    </div>
+
+    <br></br>
+    
+		<!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<div class="card" style="width: 18rem;">
+  <img src="{{storedUrl}}" class="card-img-top" alt="sun_image">
+  <div class="card-body">
+    <h5 class="card-title">Weather Forecast</h5>
+  </div>
+</div>
+  
+
+    
+  </body>
+</html>
